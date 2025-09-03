@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class CadastroController extends Controller
 {
-    public function register() {
-        
+    public function register()
+    {
+        return view('pages.cadastro');
     }
 }

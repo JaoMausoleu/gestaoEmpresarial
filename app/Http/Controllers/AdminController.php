@@ -6,25 +6,36 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function login() {
-        return 'login admin';
+    public function clientes()
+    {
+        return view('pages.admin.clientes.index');
     }
-    public function dashboard() {
-        return 'dashboard';
+
+    public function login()
+    {
+        return view('pages.admin.login');
     }
-    public function clientes() {
-        return 'clientes';
+
+    public function dashboard()
+    {
+        return view('pages.admin.dashboard');
     }
-    public function clienteShow($id = null) {
-        return 'Id do cliente: ' . $id;
+
+    
+
+    public function fornecedores()
+    {
+        return "Página de fornecedores (view ainda não criada)";
     }
-    public function fornecedores() {
-        return 'fornecedores';
+
+    public function produtos()
+    {
+        return "view desse negócio em standby";
     }
-    public function produtos() {
-        return 'produtos';
-    }
-    public function produtoShow($slug) {
-        return 'Produto: ' . $slug;
+
+    public function produtoShow($slug)
+    {
+        return "Produto admin: $slug";
     }
 }
+//fazer uso das coisa aqui dentro: em aguardo 8====D
